@@ -7,8 +7,8 @@ buttons.forEach(function (button) {
     "click",
 
     // Callback function
-    function () {
-      console.log("Button clicked!");
+    function (event) {
+      console.log(event.target.innerText);
     }
   );
 });
